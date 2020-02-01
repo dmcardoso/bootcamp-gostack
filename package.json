@@ -1,0 +1,17 @@
+{
+  "name": "bootcamp-gostack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Moreira <dmcardoso.99@hotmail.com>",
+  "description": "Rocketseat bootcamp repo",
+  "license": "MIT",
+  "homepage": "https://github.com/dmcardoso/bootcamp-gostack#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmcardoso/bootcamp-gostack.git"
+  },
+  "engines": {
+    "npm": ">=5.5.0",
+    "node": ">=9.3.0"
+  }
+}
