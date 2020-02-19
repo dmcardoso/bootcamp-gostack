@@ -37,7 +37,6 @@ export default function Repository({ match }) {
     if (loading) {
         return <Loading>Carregando</Loading>;
     }
-    console.log(repository);
 
     return (
         <Container>
