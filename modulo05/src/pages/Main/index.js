@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
- FaGithubAlt, FaPlus, FaSpinner
-} from 'react-icons/fa';
+import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import api from '../../services/api';

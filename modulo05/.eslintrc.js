@@ -19,34 +19,34 @@ module.exports = {
     plugins: ['react', 'prettier'],
     rules: {
         'prettier/prettier': 'error',
+        'curly': ['error', 'all'],
         'react/jsx-filename-extension': [
             'warn',
             {
-                extensions: ['.jsx', '.js'],
+                'extensions': ['.jsx', '.js'],
             },
         ],
+        'quotes': [
+            'error',
+            'single',
+            { 'avoidEscape': true, 'allowTemplateLiterals': false }
+        ],
+        'max-len': ['error', {'code': 80, 'ignoreUrls': true}],
         'import/prefer-default-export': 'off',
-        indent: ['error', 4, { SwitchCase: 1 }],
+        'indent': ['error', 4, { 'SwitchCase': 1 }],
         'no-param-reassign': 'off',
-        'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
+        'no-unused-vars': ['error', { 'argsIgnorePattern': 'next' }],
         'arrow-parens': 'off',
         'implicit-arrow-linebreak': 'off',
         'operator-linebreak': ['error', 'after'],
         'comma-dangle': [
             'error',
             {
-                arrays: 'only-multiline',
-                objects: 'only-multiline',
-                imports: 'only-multiline',
-                exports: 'only-multiline',
-                functions: 'never',
-            },
-        ],
-        'object-curly-newline': [
-            'error',
-            {
-                ImportDeclaration: { multiline: true, minProperties: 3 },
-                ExportDeclaration: 'never',
+                'arrays': 'only-multiline',
+                'objects': 'only-multiline',
+                'imports': 'only-multiline',
+                'exports': 'only-multiline',
+                'functions': 'never',
             },
         ],
     },
