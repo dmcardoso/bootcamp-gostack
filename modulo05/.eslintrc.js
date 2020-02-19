@@ -30,5 +30,24 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
         'arrow-parens': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'operator-linebreak': ['error', 'after'],
+        'comma-dangle': [
+            'error',
+            {
+                arrays: 'only-multiline',
+                objects: 'only-multiline',
+                imports: 'only-multiline',
+                exports: 'only-multiline',
+                functions: 'never',
+            },
+        ],
+        'object-curly-newline': [
+            'error',
+            {
+                ImportDeclaration: { multiline: true, minProperties: 3 },
+                ExportDeclaration: 'never',
+            },
+        ],
     },
 };
