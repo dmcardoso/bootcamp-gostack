@@ -11,7 +11,7 @@ import api from '../../services/api';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
-function Home({ addToCart, amount }) {
+function Home({ addToCartRequest, amount }) {
     const [produts, setProducts] = useState([]);
 
     useEffect(() => {
@@ -30,7 +30,7 @@ function Home({ addToCart, amount }) {
     }, []);
 
     function handleAddProduct(product) {
-        addToCart(product);
+        addToCartRequest(product.id);
     }
 
     return (
