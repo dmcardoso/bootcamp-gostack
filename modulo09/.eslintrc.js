@@ -37,7 +37,8 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/jsx-props-no-spreading': 'off',
-        'no-underscore-dangle': 'off'
+        'no-underscore-dangle': 'off',
+        'camelcase': 'off'
     },
     settings: {
         "import/resolver": {
