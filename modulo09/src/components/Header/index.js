@@ -13,7 +13,7 @@ export default function Header() {
             <Content>
                 <nav>
                     <img src={logo} alt="GoBarber" />
-                    <Link to="/dasboard">DASHBOARD</Link>
+                    <Link to="/dashboard">DASHBOARD</Link>
                 </nav>
                 <aside>
                     <Notifications />
@@ -24,8 +24,9 @@ export default function Header() {
                         </div>
                         <img
                             src={
-                                profile.avatar.url ||
-                                'https://api.adorable.io/avatars/50/abott@adorable.png'
+                                profile.avatar && profile.avatar.url
+                                    ? profile.avatar.url
+                                    : 'https://api.adorable.io/avatars/50/abott@adorable.png'
                             }
                             alt="Diego Fernandes"
                         />
